@@ -1,0 +1,20 @@
+
+Para executar a aplicação
+1) Criar pasta 
+   mkdir desafio01dotnet
+1.1)Acessar pasta
+   cd desafio01dotnet
+2) Fazer o clone do projeto
+git clone https://github.com/netsec2minutes/conversao-peso.git
+
+2.1) Acessar pasta
+ cd \conversao-peso/ConversaoPeso.Web
+3)Fazer o build da imagem
+
+sudo docker image build . -t danilo/desafio-dotnet
+
+4) Executar o Docker
+
+ sudo docker run -d -p 5678:80 danilo/desafio-dotnet
+
+5) Conferir a execução
