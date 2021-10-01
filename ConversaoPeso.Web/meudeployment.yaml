@@ -6,11 +6,11 @@ spec:
  replicas: 2
  selector:
   matchLabels:
-   app: labelweb
+   app: peso
  template:
   metadata:
    labels:
-    app: labelweb
+    app: peso
   spec:
    containers:
    - name: web
@@ -25,7 +25,7 @@ metadata:
  name: web
 spec:
  selector:
-  app: labelweb
+  app: peso
  ports:
   - port: 80
     protocol: TCP
